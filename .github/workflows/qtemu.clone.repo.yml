@@ -19,8 +19,10 @@ jobs:
       - name: 📤 Clone their repo and upload to GitHub repo
         run: |
           rm -rf .git
-          git clone https://gitlab.com/qtemu/gui --recursive --remote-submodules $GITHUB_WORKSPACE
-          git clone https://gitlab.com/qtemu/Installer --recursive --remote-submodules $GITHUB_WORKSPACE/QtEmuInstaller
-          git add -A $GITHUB_WORKSPACE
+          git clone https://gitlab.com/qtemu/gui --recursive --remote-submodules temp
+          git clone https://gitlab.com/qtemu/Installer --recursive --remote-submodules temp/QtEmuInstaller
+          mv temp/* .
+          rm -rf temp
+          git add -A .
           git commit -m "Inital commit"
           git push
