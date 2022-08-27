@@ -2,10 +2,10 @@
 <Package>
     <DisplayName>QtEmu</DisplayName>
     <Description>QtEmu</Description>
-    <Version>2.1.0</Version>
+    <Version>2.2.0</Version>
     <ReleaseDate>2019-08-01</ReleaseDate>
     <Licenses>
-        <License name="GNU GPLv2" file="license.txt" />
+        <License name="GNU GPLv3" file="license.txt" />
     </Licenses>
     <Default>script</Default>
     <Script>installscript.qs</Script>
