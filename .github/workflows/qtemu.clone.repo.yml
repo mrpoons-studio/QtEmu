@@ -14,8 +14,9 @@ jobs:
     steps:
       - name: 😁 Checkout Codes
         uses: actions/checkout@main
-      - name: 📤 Clone their repo and upload to GitHub repo
+      - name: 📤 Set git user to GitHub Actions
         uses: fregante/setup-git-user@master
+      - name: 📤 Clone their repo and upload to GitHub repo
         run: |
           git clone https://gitlab.com/qtemu/gui --recursive --remote-submodules .
           git clone https://gitlab.com/qtemu/Installer --recursive --remote-submodules QtEmuInstaller
