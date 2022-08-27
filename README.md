@@ -9,7 +9,7 @@ Source Mirror from GitHub: https://github.com/codenamedpktbusiness/QtEmu
 
 ## License
 
-This program is licensed under the GNU General Public License version 2.
+This program is licensed under the GNU General Public License version 3.
 See the [LICENSE](LICENSE.md "#license") file for more information
 
 ## Description
