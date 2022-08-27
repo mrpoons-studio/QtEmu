@@ -8,7 +8,7 @@ Source: https://gitlab.com/qtemu/installer
 
 ## License
 
-This program is licensed under the GNU General Public License version 2.
+This program is licensed under the GNU General Public License version 3.
 
 ## Description
 
