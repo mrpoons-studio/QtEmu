@@ -706,17 +706,26 @@ void Machine::runMachine(QEMU *QEMUGlobalObject)
     QStringList args = this->generateMachineCommand();
 
     QString program;
-    #ifdef Q_OS_LINUX
+    #ifdef Q_OS_LINUX_X64
     program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-x86_64"));
+    #endif
+    #ifdef Q_OS_LINUX_AARCH64_ARMV8A_ARMV9A
+    program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-aarch64"));
+    #endif
+    #ifdef Q_OS_LINUX_ANDROID_ARMV8A_ARMV9A
+    program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-aarch64"));
     #endif
     #ifdef Q_OS_WIN
     program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-x86_64w.exe"));
+    program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-aarch64w.exe));
     #endif
     #ifdef Q_OS_MACOS
     program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-x86_64"));
+    program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-aarch64"));
     #endif
     #ifdef Q_OS_FREEBSD
     program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-x86_64"));
+    program.append(QEMUGlobalObject->getQEMUBinary("qemu-system-aarch64"));
     #endif
 
     if (program.isEmpty()) {
@@ -1094,7 +1103,8 @@ bool Machine::saveMachine()
     machineJSONObject["path"]        = QDir::toNativeSeparators(this->path);
     machineJSONObject["uuid"]        = this->uuid;
     machineJSONObject["hostsoundsystem"] = this->hostSoundSystem;
-    machineJSONObject["binary"] = "qemu-system-x86_64";
+    machineJSONObject["binary"] = "qemu-system-x86_64"
+    machineJSONObject["binary"] = "qemu-system-aarch64"
 
     QJsonObject cpu;
     cpu["CPUType"]     = this->CPUType;
