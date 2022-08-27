@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>QtEmu</Name>
+    <Version>2.1.0</Version>
+    <Title>QtEmu</Title>
+    <Publisher>QtEmu Developers</Publisher>
+	<ProductUrl>https://www.qtemu.org</ProductUrl>
+	<InstallerWindowIcon>qtemu.ico</InstallerWindowIcon>
+    <InstallerApplicationIcon>qtemu.png</InstallerApplicationIcon>
+    <StartMenuDir>QtEmu</StartMenuDir>
+	<TargetDir>@RootDir@/QtEmu</TargetDir>
+</Installer>
