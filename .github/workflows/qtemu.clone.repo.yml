@@ -18,6 +18,7 @@ jobs:
         uses: fregante/setup-git-user@master
       - name: 📤 Clone their repo and upload to GitHub repo
         run: |
+          rm -rf .git
           git clone https://gitlab.com/qtemu/gui --recursive --remote-submodules .
           git clone https://gitlab.com/qtemu/Installer --recursive --remote-submodules QtEmuInstaller
           git add -A .
