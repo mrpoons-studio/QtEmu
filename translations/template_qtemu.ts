@@ -4,12 +4,12 @@
 <context>
     <name>ChooseSystemPage</name>
     <message>
-        <location filename="../machinewizard.cpp" line="271"/>
+        <location filename="../machinewizard.cpp" line="269"/>
         <source>ReactOS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../machinewizard.cpp" line="273"/>
+        <location filename="../machinewizard.cpp" line="274"/>
         <source>Other</source>
         <translation type="unfinished"></translation>
     </message>
@@ -25,32 +25,42 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../machinewizard.cpp" line="266"/>
+        <location filename="../machinewizard.cpp" line="270"/>
         <source>Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../machinewizard.cpp" line="267"/>
-        <source>Windows 98</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../machinewizard.cpp" line="268"/>
-        <source>Windows 2000</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../machinewizard.cpp" line="269"/>
-        <source>Windows XP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../machinewizard.cpp" line="270"/>
-        <source>Windows Vista</source>
+        <location filename="../machinewizard.cpp" line="271"/>
+        <source>Android x64</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../machinewizard.cpp" line="272"/>
+        <source>Android armv8a</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../machinewizard.cpp" line="270"/>
+        <source>Android armv9a</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../machinewizard.cpp" line="266"/>
+        <source>Windows 10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../machinewizard.cpp" line="267"/>
+        <source>Windows 11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../machinewizard.cpp" line="268"/>
+        <source>Microsoft server (aka. Windows Server LTSC)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../machinewizard.cpp" line="273"/>
         <source>BSD</source>
         <translation type="unfinished"></translation>
     </message>
