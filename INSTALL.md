@@ -30,9 +30,9 @@
 # Dependencies for building
 
   - Archlinux and Parabola (runtime deps include build-time deps):
-    **qt5-base**
+    `qt5-base`
 
-    **Build tools: gcc, make**
+    **Build tools: `gcc`, `make`**
 
 # Build process
 
@@ -41,6 +41,6 @@ From QtEmu's main directory, where qtemu.pro is located, execute:
         mkdir build               # Create a clean directory for the build
         cd build                  # Go into it
         qmake ..                  # Ask Qmake to generate a Makefile[*]
-        make                      # Run Make to compile the project
+        make -j16                 # Run Make to compile the project
 
-[*]you might need to use the command 'qmake-qt5' instead
+- [x] You might need to use the command `qmake-qt5` instead
