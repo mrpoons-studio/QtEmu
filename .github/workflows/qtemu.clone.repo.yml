@@ -21,7 +21,7 @@ jobs:
           git clone https://gitlab.com/qtemu/gui --recursive --remote-submodules temp
           git clone https://gitlab.com/qtemu/Installer --recursive --remote-submodules temp/QtEmuInstaller
           rm -rf temp/QtEmuInstaller/.git
-          mv temp/* .
+          mv -f temp/* .
           rm -rf temp
           git add -A .
           git commit -m "Inital commit"
