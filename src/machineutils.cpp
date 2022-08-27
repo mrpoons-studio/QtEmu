@@ -155,8 +155,8 @@ bool MachineUtils::deleteMachine(const QUuid machineUuid)
         m_deleteMachineMessageBox->setWindowTitle(tr("Qtemu - Critical error"));
         m_deleteMachineMessageBox->setIcon(QMessageBox::Critical);
         m_deleteMachineMessageBox->setWindowIcon(QIcon::fromTheme("qtemu", QIcon(":/images/qtemu.png")));
-        m_deleteMachineMessageBox->setText(tr("<p>Cannot delete the machine</p>"
-                                              "<p>The file with the machines configuration are not readable</p>"));
+        m_deleteMachineMessageBox->setText(tr("Cannot delete the machine<p />"
+                                              "The file with the machines configuration are not readable<p />"));
         m_deleteMachineMessageBox->exec();
         return false;
     }
