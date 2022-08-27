@@ -50,9 +50,6 @@ MachineWizard::MachineWizard(Machine *machine,
 
     this->setStartId(Page_Name);
 
-    #ifndef Q_OS_MAC
-        this->setWizardStyle(ClassicStyle);
-    #endif
     #ifdef Q_OS_MAC
         this->setWizardStyle(MacStyle);
     #endif
