@@ -5,11 +5,12 @@ Development version: 2.2 <br />
 
 Website: https://qtemu.org/ <br />
 Source: https://gitlab.com/qtemu/gui
+Source Mirror from GitHub: https://github.com/codenamedpktbusiness/QtEmu
 
 ## License
 
 This program is licensed under the GNU General Public License version 2.
-See the [LICENSE](https://gitlab.com/Qtemu/gui/blob/master/LICENSE.md) file for more information
+See the [LICENSE](LICENSE.md "#license") file for more information
 
 ## Description
 
@@ -19,11 +20,11 @@ This way you can easily test a new operating system or try a Live CD on your sys
 
 ## Versions history
 
-See [CHANGELOG](https://gitlab.com/Qtemu/gui/blob/master/CHANGELOG.md) file.
+See [CHANGELOG](CHANGELOG.md "#release-notes") file.
 
 ## Installation
 
-See [INSTALL](https://gitlab.com//Qtemu/gui/blob/master/INSTALL.md) file.
+See [INSTALL](INSTALL.md "#install") file.
 
 ## Downloads
 
@@ -31,8 +32,8 @@ Prebuild binaries and installers
 
 - Windows
 
-* [QtEmu installer for Windows x86_64](https://www.carlavilla.es/qtemu/qtemu_setup_x86_64.exe)
-* [QtEmu portable for Windows x86_64](https://www.carlavilla.es/qtemu/qtemu_portable_x86_64.zip)
+* [QtEmu installer for Windows x86_64](https://www.carlavilla.es/qtemu/qtemu_setup_x86_64.exe "#setup")
+* [QtEmu portable for Windows x86_64](https://www.carlavilla.es/qtemu/qtemu_portable_x86_64.zip "#archive")
 
 ## Development
 
@@ -59,11 +60,11 @@ If you want to translate to another language be free to do it :D
 
 ## Contributing
 
-If you want to contribute to the project, please see [CONTRIBUTING](https://gitlab.com/Qtemu/gui/blob/master/CONTRIBUTING.md) file.
+If you want to contribute to the project, please see [CONTRIBUTING](CONTRIBUTING.md "#contribute") file.
 
 ## Extra links
 
-* [QEMU Web Page](https://www.qemu.org/)
-* [QEMU Wiki](https://wiki.qemu.org/Main_Page)
-* [Qt Docs](http://doc.qt.io/qt-5/index.html)
-* [Qt Linguist](https://doc.qt.io/qt-5/qtlinguist-index.html)
+* [QEMU Web Page](https://www.qemu.org/ "#QEMU")
+* [QEMU Wiki](https://wiki.qemu.org/Main_Page "#QEMU_wiki")
+* [Qt Docs](http://doc.qt.io/qt-5/index.html "#qt5docs")
+* [Qt Linguist](https://doc.qt.io/qt-5/qtlinguist-index.html "#qt5linguistdocs")
