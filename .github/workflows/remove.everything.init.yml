@@ -1,0 +1,26 @@
+# Workflow for inital cloning QtEmu GitLab Repos of its packages. This runs once only.
+---
+name: 🗑️ Remove everying in the repo
+on:
+  # Runs on pushes targeting the default branch
+  workflow_dispatch:
+    branches: $default_branch
+
+jobs:
+  # Build job
+  remove-everything:
+    name: 📥 Let's Remove Everying
+    runs-on: ubuntu-22.04
+    steps:
+      - name: 😁 Checkout Codes
+        uses: actions/checkout@main
+      - name: 📤 Set git user to GitHub Actions
+        uses: fregante/setup-git-user@master
+      - name: 🗑️Confirm to remove everying and re-init
+        run: |
+          shopt -s extglob
+          rm -rf !(".github")
+          git init
+          git add -A .
+          git commit -m "Inital commit"
+          git push
